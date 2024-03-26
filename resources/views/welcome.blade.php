@@ -38,9 +38,7 @@
                 </div>
                 <div class="component-2-parent47">
                     <img class="component-2-icon295" alt="" src="/img/eductaion.jpg" />
-                    <a href="{{ route('blog') }}">
                         <div class="home500">Blog</div>
-                    </a>
                     <div class="home501">Home</div>
                     <img class="component-2-icon295" alt="" src="/img/eductaion.jpg" />
                 </div>
@@ -54,17 +52,13 @@
                 </div>
                 <div class="component-2-parent47">
                     <img class="component-2-icon295" alt="" src="/img/eductaion.jpg" />
-                    <a href="{{ route('faq') }}">
                         <div class="home500">Faq</div>
-                    </a>
                     <div class="home501">Home</div>
                     <img class="component-2-icon295" alt="" src="/img/eductaion.jpg" />
                 </div>
                 <div class="component-2-parent47">
                     <img class="component-2-icon295" alt="" src="/img/eductaion.jpg" />
-                    <a href="{{ route('feedback') }}">
                         <div class="home500">Feedback</div>
-                    </a>
                     <div class="home501">Home</div>
                     <img class="component-2-icon295" alt="" src="/img/eductaion.jpg" />
                 </div>

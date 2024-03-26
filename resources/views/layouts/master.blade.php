@@ -29,123 +29,74 @@
 </head>
 <body>
     <!-- Header commun -->
-    <header>
+<header>
     <div class="header10">
-      <div class="logo-parent18">
-        <div class="logo20">
-          <img
-            class="isolation-mode-icon20"
-            alt=""
-            src="./public/isolation-mode.svg"
-          />
-
-          <b class="edupress20">EduPress</b>
-        </div>
-        <div class="menu10">
-          <div class="nav10">
-            <img
-              class="component-2-icon295"
-              alt=""
-              src="./public/component-2.svg"
-            />
-
-            <div class="home500">Home</div>
-            <div class="home501">Home</div>
-            <img
-              class="component-2-icon295"
-              alt=""
-              src="./public/component-2.svg"
-            />
-          </div>
-          <div class="component-2-parent47">
-            <img
-              class="component-2-icon295"
-              alt=""
-              src="./public/component-2.svg"
-            />
-
-            <div class="home500">Courses</div>
-            <div class="home501">Home</div>
-            <img
-              class="component-2-icon295"
-              alt=""
-              src="./public/component-2.svg"
-            />
-          </div>
-          <div class="component-2-parent47">
-            <img
-              class="component-2-icon295"
-              alt=""
-              src="./public/component-2.svg"
-            />
-
-            <div class="home500">Blog</div>
-            <div class="home501">Home</div>
-            <img
-              class="component-2-icon295"
-              alt=""
-              src="./public/component-2.svg"
-            />
-          </div>
-          <div class="component-2-parent49">
-            <img
-              class="component-2-icon295"
-              alt=""
-              src="./public/component-2.svg"
-            />
-
-            <div class="home500">Page</div>
-            <div class="home507">Home</div>
-            <img class="icon374" alt="" src="./public/icon.svg" />
-          </div>
-          <div class="component-2-parent47">
-            <img
-              class="component-2-icon295"
-              alt=""
-              src="./public/component-2.svg"
-            />
-
-            <div class="home500">LearnPress Add-On</div>
-            <div class="home501">Home</div>
-            <img
-              class="component-2-icon295"
-              alt=""
-              src="./public/component-2.svg"
-            />
-          </div>
-          <div class="component-2-parent47">
-            <img
-              class="component-2-icon295"
-              alt=""
-              src="./public/component-2.svg"
-            />
-
-            <div class="home500">Premium Theme</div>
-            <div class="home501">Home</div>
-            <img
-              class="component-2-icon295"
-              alt=""
-              src="./public/component-2.svg"
-            />
-          </div>
-        </div>
- <div class="login-register-parent8">
+        <div class="logo-parent18">
+            <div class="logo20">
+                <img class="isolation-mode-icon20" alt="" src="/img/eductaion.jpg" />
+                <b class="edupress20">EduPress</b>
+            </div>
+            <div class="menu10">
+                <div class="nav10">
+                    <img class="component-2-icon295" alt="" src="/img/eductaion.jpg" />
+                    {{-- <a href="{{ route('home') }}"> --}}
+                        <div class="home500">Home</div>
+                    {{-- </a> --}}
+                    <div class="home501">Home</div>
+                    <img class="component-2-icon295" alt="" src="/img/eductaion.jpg" />
+                </div>
+                <div class="component-2-parent47">
+                    <img class="component-2-icon295" alt="" src="/img/eductaion.jpg" />
+                    <a href="{{ route('cours') }}">
+                        <div class="home500">Courses </div>
+                    </a>
+                    <div class="home501">Home</div>
+                    <img class="component-2-icon295" alt="" src="/img/eductaion.jpg" />
+                </div>
+                <div class="component-2-parent47">
+                    <img class="component-2-icon295" alt="" src="/img/eductaion.jpg" />
+                        <div class="home500">Blog</div>
+                    <div class="home501">Home</div>
+                    <img class="component-2-icon295" alt="" src="/img/eductaion.jpg" />
+                </div>
+                <div class="component-2-parent49">
+                    <img class="component-2-icon295" alt="" src="/img/eductaion.jpg" />
+                    {{-- <a href="{{ route('page') }}"> --}}
+                        <div class="home500">Page</div>
+                    {{-- </a> --}}
+                    <div class="home507">Home</div>
+                    <img class="icon374" alt="" src="/img/eductaion.jpg" />
+                </div>
+                <div class="component-2-parent47">
+                    <img class="component-2-icon295" alt="" src="/img/eductaion.jpg" />
+                        <div class="home500">Faq</div>
+                    <div class="home501">Home</div>
+                    <img class="component-2-icon295" alt="" src="/img/eductaion.jpg" />
+                </div>
+                <div class="component-2-parent47">
+                    <img class="component-2-icon295" alt="" src="/img/eductaion.jpg" />
+                        <div class="home500">Feedback</div>
+                    <div class="home501">Home</div>
+                    <img class="component-2-icon295" alt="" src="/img/eductaion.jpg" />
+                </div>
+            </div>
+            <div class="login-register-parent8">
                 <div class="login-register11">
                     @auth
-                        <a href="{{ route('logout') }}" class="logout-link">Logout</a>
-                        <a href="{{ route('profile') }}" class="profile-link">Profile</a>
+                    <a href="{{ route('logout') }}" class="logout-link">Logout</a>
+                    <a href="{{ route('profile') }}" class="profile-link">Profile</a>
                     @else
-                        <a href="{{ route('login') }}" class="login-link">Login</a> / 
-                        <a href="{{ route('register') }}" class="register-link">Register</a>
+                    <a href="{{ route('login') }}" class="login-link">Login</a> /
+                    <a href="{{ route('register') }}" class="register-link">Register</a>
                     @endauth
                 </div>
                 <div class="search15">
-                    <img class="icon377" alt="" src="./public/icon.svg" />
+                    <img class="icon377" alt="" src="/img/eductaion.jpg" />
                 </div>
             </div>
-      </div>
+        </div>
     </div>
-    </header>
+</header>
 
     <!-- Contenu spécifique à chaque page -->
     <div class="content">
@@ -160,7 +111,7 @@
             <img
               class="isolation-mode-icon21"
               alt=""
-              src="./public/isolation-mode.svg"
+              src="/img/eductaion.jpg"
             />
 
             <b class="edupress21">EduPress</b>
@@ -199,15 +150,14 @@
               <p class="contact-us20">Mail: supportlms@gmail.com</p>
             </div>
             <div class="social11">
-              <img class="icon378" alt="" src="./public/icon.svg" />
+              <img class="icon378" alt="" src="./img/eductaion.jpg" />
+              <img class="icon378" alt="" src="./img/eductaion.jpg" />
 
-              <img class="icon378" alt="" src="./public/icon.svg" />
+              <img class="icon378" alt="" src="./img/eductaion.jpg" />
 
-              <img class="icon378" alt="" src="./public/icon.svg" />
+              <img class="icon378" alt="" src="./img/eductaion.jpg" />
 
-              <img class="icon378" alt="" src="./public/icon.svg" />
-
-              <img class="icon378" alt="" src="./public/icon.svg" />
+              <img class="icon378" alt="" src="./img/eductaion.jpg" />
             </div>
           </div>
         </div>

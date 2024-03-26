@@ -1,15 +1,15 @@
 <?php
-
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
 class Instructor extends Model
 {
+    protected $table = 'instructeur';
     protected $fillable = ['Nom', 'Prenom'];
 
-    public function courses()
+    public function cours()
     {
-        return $this->hasMany('App\Models\Course', 'InstructeurId');
+        return $this->hasMany(Cours::class, 'InstructeurId');
     }
 }

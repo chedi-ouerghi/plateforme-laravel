@@ -2,25 +2,32 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Models\Instructor;
+use App\Models\StudentRequest;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
-class InstructorController extends Controller
+class StudentRequestController extends Controller
 {
+    // Afficher toutes les demandes des étudiants pour rejoindre un cours
     public function index()
     {
-        $instructors = Instructor::all();
-        return view('admin.instructors.index', compact('instructors'));
+        $requests = StudentRequest::all();
+        return view('admin.student_requests.index', compact('requests'));
     }
 
-    public function create()
+    // Accepter une demande d'étudiant pour rejoindre un cours
+    public function accept($id)
     {
-        // Méthode pour afficher le formulaire de création d'un nouvel instructeur
+        $request = StudentRequest::findOrFail($id);
+        $request->update(['status' => 'Accepted']);
+        return redirect()->back()->with('success', 'Student request accepted successfully.');
     }
 
-    public function store(Request $request)
+    // Refuser une demande d'étudiant pour rejoindre un cours
+    public function reject($id)
     {
-        // Méthode pour sauvegarder un nouvel instructeur dans la base de données
+        $request = StudentRequest::findOrFail($id);
+        $request->update(['status' => 'Rejected']);
+        return redirect()->back()->with('success', 'Student request rejected successfully.');
     }
 }

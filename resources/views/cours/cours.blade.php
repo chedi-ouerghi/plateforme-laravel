@@ -12,56 +12,55 @@
           <div class="frame-parent22">
           <div class="search-parent2">
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <img class="icon418" alt="" src="/img/education.jpg" />
 </div>
-
-            <img class="icon418" alt="" src="/img/eductaion.jpg" />
-
-            <img class="icon418" alt="" src="/img/eductaion.jpg" />
           </div>
         </div>
         <div class="courses46">
           @forelse($courses as $course)
-    <div class="courses47">
-        <div class="image24">
-            <img class="image-child21" alt="" src="/img/education.jpg" />
-            <div class="photography-wrapper22">
-                <div class="photography25">{{ $course->Titre }}</div>
-            </div>
-        </div>
-        <div class="content65">
-            <div class="frame-parent23">
-                <div class="by-determined-poitras-parent22">
-                    <div class="search16">
-                        <span>by </span>
-                        <span class="determined-poitras25">{{ $course->NomInstructeur }}</span>
-                    </div>
-                    <div class="create-an-lms24">
-                        {{ $course->Description }}
-                    </div>
-                </div>
-                <div class="meta44">
-                    <div class="times44">
-                        <img class="component-2-icon324" alt="" src="/img/education.jpg" />
-                        <div class="search16">{{ $course->Duree }}</div>
-                        <div class="home557">Home</div>
-                        <img class="icon421" alt="" src="/img/education.jpg" />
-                    </div>
-                    <div class="times44">
-                        <!-- Ajoutez ici d'autres informations dynamiques sur le cours -->
-                    </div>
-                    <!-- Ajoutez d'autres blocs dynamiques si nécessaire -->
-                </div>
-            </div>
-            <div class="bottom6">
-                <div class="price25">
-                    <div class="search16">${{ $course->Prix }}</div>
-                    <div class="free22">Free</div>
-                </div>
-                <div class="view-more24">View more</div>
-            </div>
+   <div class="courses47">
+    <div class="image24">
+        <img class="image-child21" alt="" src="/img/eductaion.jpg" />
+        <div class="photography-wrapper22">
+            <div class="photography25">{{ $course->Titre }}</div>
         </div>
     </div>
+    <div class="content65">
+        <div class="frame-parent23">
+            <div class="by-determined-poitras-parent22">
+                <div class="search16">
+                    <span>by </span>
+                    <span class="determined-poitras25">{{ $course->NomInstructeur }}</span>
+                </div>
+                <div class="create-an-lms24">
+                    {{ $course->Description }}
+                </div>
+            </div>
+            <div class="meta44">
+                <div class="times44">
+                    <img class="component-2-icon324" alt="" src="/img/education.jpg" />
+                    <div class="search16"> Duree: {{ $course->Duree }}</div>
+                    <div class="search16"> Niveau: {{ $course->NiveauDifficulte }}</div>
+                    <div class="search16"> Nombre Lecons: {{ $course->NombreLecons }}</div>
+                    <div class="home557">Home</div>
+                    <img class="icon421" alt="" src="/img/education.jpg" />
+                </div>
+                <div class="times44">
+                    <!-- Ajoutez ici d'autres informations dynamiques sur le cours -->
+                </div>
+                <!-- Ajoutez d'autres blocs dynamiques si nécessaire -->
+            </div>
+        </div>
+        <div class="bottom6">
+            <div class="price25">
+                <div class="search16">${{ $course->Prix }}</div>
+                <div class="free22">Free</div>
+            </div>
+            <div class="accepter">accepter: {{ $course->NombreEtudiantsAcceptes }}</div>
+            <div class="view-more24-bouton">View more</div>
+        </div>
+    </div>
+</div>
+
  @empty
 <div class="error-message">
     Aucun cours n'a été trouvé. En cours de réparation.

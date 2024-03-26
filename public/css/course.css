@@ -138,18 +138,21 @@
     justify-content: flex-start;
     gap: var(--gap-5xs);
 }
+
 .frame-parent23,
 .meta44 {
     align-items: center;
     justify-content: center;
     width: 100%;
 }
+
 .frame-parent23 {
     align-self: stretch;
     flex-direction: column;
     gap: var(--gap-base);
     width: 100%;
 }
+
 .free22 {
     position: relative;
     line-height: 150%;
@@ -157,6 +160,7 @@
     font-weight: 500;
     color: var(--green);
 }
+
 .price25 {
     display: flex;
     flex-direction: row;
@@ -164,7 +168,8 @@
     justify-content: flex-start;
     gap: var(--gap-5xs);
 }
-.view-more24 {
+
+.accepter {
     position: relative;
     line-height: 150%;
     text-transform: capitalize;
@@ -172,6 +177,24 @@
     color: var(--black);
     text-align: right;
 }
+
+.view-more24-bouton {
+    position: relative;
+    line-height: 150%;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: var(--black);
+    text-align: right;
+    border: 1px solid var(--black);
+    padding: 0.5% 1%;
+    cursor: pointer;
+}
+
+.view-more24-bouton:hover {
+    border: 1px solid gray;
+    padding: 0.5%;
+}
+
 .bottom6,
 .content65 {
     align-self: stretch;
@@ -179,6 +202,7 @@
     align-items: flex-start;
     justify-content: space-between;
 }
+
 .bottom6 {
     border-top: 1px solid var(--light-grey);
     flex-direction: row;
@@ -187,6 +211,7 @@
     color: var(--grey);
     display: flex;
 }
+
 .content65 {
     flex: 1;
     flex-direction: column;
@@ -194,12 +219,14 @@
     color: var(--dark-gray);
     width: 16rem;
 }
+
 .courses46,
 .courses47,
 .listing11 {
     display: flex;
     justify-content: flex-start;
 }
+
 .courses47 {
     width: 99%;
     border-radius: var(--br-xl);
@@ -209,10 +236,12 @@
     flex-direction: row;
     align-items: flex-start;
 }
+
 .courses46,
 .listing11 {
     flex-direction: column;
 }
+
 .courses46 {
     width: 35rem;
     align-items: center;
